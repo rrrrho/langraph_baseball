@@ -15,7 +15,7 @@ def batting_agent(llm):
         llm, batting_stats,
         verbose=True,
         allow_dangerous_code=True,
-        agent_executor_kwargs={"handle_parsing_errors": True}
+        agent_executor_kwargs={"handle_parsing_errors": True},
     )
 
 # Pitching (pitcher_stats.csv)
@@ -42,7 +42,8 @@ def games_ws_agent(llm):
         llm, ws_games,
         verbose=True,
         allow_dangerous_code=True,
-        agent_executor_kwargs={"handle_parsing_errors": True}
+        agent_executor_kwargs={"handle_parsing_errors": True},
+       
     )
 
 # Postseason games (playoff_games.csv)

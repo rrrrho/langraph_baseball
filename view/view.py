@@ -2,7 +2,7 @@ from langchain_ollama import ChatOllama
 from controller.controller import Controller
 
 app = Controller(model = ChatOllama(
-        model="llama3.2",
+        model="llama3.1:8b",
         temperature=0,
         max_retries=2
     ))
@@ -22,4 +22,4 @@ def ask(question: str):
 
     return result
 
-result = ask("which pitcher is the best?")
+result = ask("What is the current World Series score?")
