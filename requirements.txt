@@ -1,0 +1,11 @@
+langchain
+langchain-core
+langchain_experimental
+langchain-openai
+langchain-ibm
+ibm-watsonx-ai
+langgraph
+typing-extensions
+pandas
+langchain-ollama
+ollama
